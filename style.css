@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo-tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20 , 20, 1)), url(../segundoProjeto/265e2a9b45ad1c8f0e46e34d50c587cb.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position: 0px ;
+    background-repeat: no-repeat;
+}
+
+/*  menu  - header - navBar  */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(20, 20 , 20, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 40px;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: wheat;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(141, 26, 26);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/*  Centro - Conteudo principal */
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary.text {
+    width: 80px;
+    font-size: 500px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
